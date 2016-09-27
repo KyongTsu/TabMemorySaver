@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+	<title id='gsTitle'>Tab Memory Saver - Recovery</title>
+	<link type="text/css" href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/sessionUtils.js"></script>
+    <script type="text/javascript" src="js/recovery.js"></script>
+
+</head>
+<body id="body">
+
+<div class="splash">
+
+
+
+	<h1>Ruh roh!</h1>
+	<p>Looks like you're recovering from an extension crash.<br />
+	Your suspended tabs may have crashed or disappeared.</p>
+
+	<button id='restoreSession' class='btn'>Restore tabs automatically</button>
+	&nbsp;&nbsp;
+	<button id='manageManuallyLink' class='btn secondary'>Go to session manager</button>
+
+	<div id='screenCaptureNotice'>
+		<span><em>Important!</em></span>
+		<p>You currently have screen capturing turned on. If this extension is repeatedly crashing it is recommended you disable this option.</p>
+		 <a id='previewsOffBtn'>Turn off screen capturing</a>
+	</div>
+
+    <hr class="splashRule" />
+	<div class='recoverySection'>
+		<p>Tabs to restore:</p>
+		<div id='recoveryLinks'></div>
+	</div>
+
+</div>
+
+
+</body>
+</html>
